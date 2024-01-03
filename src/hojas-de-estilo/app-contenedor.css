@@ -1,0 +1,14 @@
+*{
+    --primario: #03585b;
+    --secundario: #02716a;
+    --fondo: #7fbfb0;
+    --adicional1: #f2b49e;
+    --adicional2: #f29580;
+  }
+
+
+  .contenedor-aplicacion{
+    display: grid;
+    justify-content: center;
+    background-color: var(--fondo);
+  }

@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import AppContenedor from './componentes/app-contenedor.js';
+import Cabecera from './componentes/Cabecera.js';
+//import './App.css';
+import Formulario from './componentes/Formulario.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container App">
+      <Cabecera />
+      <div className='contenedor-aplicaciones'>
+        <AppContenedor
+          vinculo= 'https://startling-marzipan-de3cc9.netlify.app' 
+          nombre= 'Calculadora' 
+        />
+        <AppContenedor 
+          vinculo='https://soft-liger-d3063a.netlify.app'
+          nombre='Administrador de Tareas'
+        />
+        <AppContenedor 
+          vinculo= 'https://frabjous-taffy-5e61b4.netlify.app' 
+          nombre= 'Testimonios' 
+        />
+        <AppContenedor 
+          vinculo='https://cerulean-tartufo-5802ec.netlify.app'
+          nombre='Contador de clicks'
+        />
+      </div>
+      <Formulario />
     </div>
   );
 }
