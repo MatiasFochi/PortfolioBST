@@ -5,6 +5,6 @@
   --adicional2: #f29580;
 }
 
-.App{
-  background-color: white;
+.uno{
+  background-color: var(--secundario);
 }

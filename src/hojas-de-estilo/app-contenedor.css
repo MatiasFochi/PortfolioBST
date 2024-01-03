@@ -6,9 +6,9 @@
     --adicional2: #f29580;
   }
 
-
   .contenedor-aplicacion{
     display: grid;
-    justify-content: center;
-    background-color: var(--fondo);
+    justify-content: auto;
+    text-align: center;
+    background-color: var(--adicional2);
   }

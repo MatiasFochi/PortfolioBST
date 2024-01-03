@@ -7,11 +7,10 @@ function AppContenedor (props){
     window.open(url, '_blank')
   };
 
-return(
-  <div className="container general">
-    <div className="row justify-content-md-center">
-      <div className='col col-lg-2'></div>
-      <div className="col contenedor-aplicacion">
+  return(
+    <div className="container text-center row justify-content-md-center">
+      <div className='col contenedor-aplicacion'></div>
+      <div className="col-6 contenedor-aplicacion">
         <a><strong>{props.nombre}</strong></a>
         <img 
         src='' 
@@ -22,10 +21,9 @@ return(
             {props.nombre}
         </button>
       </div>
-      <div className='col col-lg-2'></div>
+      <div className='col contenedor-aplicacion'></div>
     </div>
-  </div>
-);
+  );
 }
 
 export default AppContenedor;

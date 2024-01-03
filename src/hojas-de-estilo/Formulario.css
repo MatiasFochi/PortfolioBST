@@ -5,6 +5,10 @@
   --adicional2: #f29580;
 }
 
-.App{
-  background-color: white;
+.tres{
+  background-color: var(--adicional1);
+}
+
+.cuatr{
+  background-color: var(--primario);
 }
