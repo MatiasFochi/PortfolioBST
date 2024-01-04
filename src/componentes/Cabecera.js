@@ -3,13 +3,13 @@ import '../hojas-de-estilo/Cabecera.css';
 
 function Cabecera(props) {
   return(
-    <div className='container-sm align-items-center cabecera-contenedor'>
+    <div className='container-sm align-items-center cabecera-contenedor espacio sombreado'>
       <div className="card-body" style={{width: 520 + "px"}}>
           <p className="card-text text-center fs-1">Matias Fochi</p>
           <p className="card-text text-center fs-3">Desarrollador Front-End</p>
       </div>
-      <div className="card align-items-center " style={{width: 150 + "px", height: 150 + "px"}}>
-        <img src={FotoPerfil} className="card-img-top" alt="Foto de perfil" style={{width: 150 + "px",height: 150 + "px"}} />
+      <div className="card align-items-center perfil espacio espacio-lateral" style={{width: 150 + "px", height: 150 + "px"}}>
+        <img src={FotoPerfil} className="perfil" alt="Foto de perfil" style={{width: 150 + "px",height: 150 + "px"}} />
       </div>
     </div>
   );

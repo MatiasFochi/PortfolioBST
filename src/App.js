@@ -5,17 +5,13 @@ import Formulario from './componentes/Formulario.js';
 
 function App() {
   return (
-    <div className="container-xl text-center aling-items-center App">
+    <div className="container-xl text-center aling-items-center App sombreado">
       <Cabecera />
-      <div className='container-sm'>
-        <div className="card">
-          <div className="card-body">
-            "Aqui va un breve resumen de mi"
-          </div>
-        </div>
+      <div className='container-sm sombreado'>
+        <p className='fs-6 espacio'>"Aqui va un breve resumen de mi"</p>
       </div>
       <AppContenedor />
-      
+      <Formulario />
     </div>
   );
 }

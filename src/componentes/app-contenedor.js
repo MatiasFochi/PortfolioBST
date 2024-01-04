@@ -10,7 +10,7 @@ function AppContenedor (props){
   const Contador = "https://cerulean-tartufo-5802ec.netlify.app";
 
   return(
-    <div className="accordion accordion-flush contenedor-principal-acordion" id="accordionFlushExample">
+    <div className="accordion accordion-flush sombreado espacio" id="accordionFlushExample">
       <div className="accordion-item">
         <h2 className="accordion-header">
           <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">

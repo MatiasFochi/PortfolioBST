@@ -5,10 +5,10 @@
   --adicional2: #f29580;
 }
 
-.tres{
-  background-color: var(--adicional1);
+.espacio{
+  margin: 16px 0;
 }
-
-.cuatr{
-  background-color: var(--primario);
+.espacio-lateral{
+  margin-left: 8px;
+  margin-right: 8px;
 }
