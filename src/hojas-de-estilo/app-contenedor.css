@@ -1,14 +1,21 @@
 *{
-    --primario: #03585b;
-    --secundario: #02716a;
-    --fondo: #7fbfb0;
-    --adicional1: #f2b49e;
-    --adicional2: #f29580;
-  }
+  --primario: #03585b;
+  --secundario: #02716a;
+  --fondo: #7fbfb0;
+  --adicional1: #f2b49e;
+  --adicional2: #f29580;
+}
 
-  .contenedor-aplicacion{
-    display: grid;
-    justify-content: auto;
-    text-align: center;
-    background-color: var(--adicional2);
-  }
+.contenedor-oculto{
+  margin: 10px 30px;
+}
+
+.contenedor-oculto .detalle{
+  font-size: 0.9rem;
+}
+
+.contenedor-principal-acordion{
+  border: 0.125rem solid rgba(0, 0, 0, 0.075);
+  border-radius: 7px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}

@@ -5,6 +5,7 @@
   --adicional2: #f29580;
 }
 
-.uno{
-  background-color: var(--secundario);
+.cabecera-contenedor{
+  display: flex;
+  border: 0.1px solid black;
 }

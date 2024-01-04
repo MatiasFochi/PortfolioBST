@@ -5,11 +5,24 @@ import Formulario from './componentes/Formulario.js';
 
 function App() {
   return (
-    <div className="container text-center App">
-      <div className='col-12'>
-        <Cabecera />
+    <div className="container-xl text-center aling-items-center App">
+      <Cabecera />
+      <div className='container-sm'>
+        <div className="card">
+          <div className="card-body">
+            "Aqui va un breve resumen de mi"
+          </div>
+        </div>
       </div>
-      <div className='col-12'>
+      <AppContenedor />
+      
+    </div>
+  );
+}
+
+export default App;
+
+/*
       <AppContenedor
         vinculo= 'https://startling-marzipan-de3cc9.netlify.app' 
         nombre= 'Calculadora' 
@@ -26,12 +39,4 @@ function App() {
         vinculo='https://cerulean-tartufo-5802ec.netlify.app'
         nombre='Contador de clicks'
       />
-      </div>
-      <div className='col-12'>
-        <Formulario />
-      </div>
-    </div>
-  );
-}
-
-export default App;
+*/
