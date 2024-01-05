@@ -10,42 +10,44 @@ function AppContenedor (props){
   const Contador = "https://cerulean-tartufo-5802ec.netlify.app";
 
   return(
-    <div className="accordion accordion-flush sombreado espacio" id="accordionFlushExample">
-      <div className="accordion-item">
-        <h2 className="accordion-header">
-          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            <strong>Aplicacion Calculadora</strong>
-          </button>
-        </h2>
-        <div id="flush-collapseOne" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
-          <p className='text-start detalle'>Aplicacion de calculadora.</p>
-          <a href={calculadora} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
+    <div className='container-sm sombreado espacio'>
+      <h2 className='espacio-lateral espacio text-start'><strong>Aplicaciones</strong></h2>
+      <div className="accordion accordion-flush sombreado espacio" id="accordionFlushExample">
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <strong>Aplicacion Calculadora</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
+            <p className='text-start detalle'>Aplicacion de calculadora.</p>
+            <a href={calculadora} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
+          </div>
+        </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <strong>Aplicacion Organizador de Tareas</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
+            <p className='text-start detalle'>Aplicacion de Organizador de Tareas.</p>
+            <a href={Tareas} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
+          </div>
+        </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <strong>Aplicacion Contador de Clicks</strong>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
+            <p className='text-start detalle'>Aplicacion de Contador de Clicks.</p>
+            <a href={Contador} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
+          </div>
         </div>
       </div>
-      <div className="accordion-item">
-        <h2 className="accordion-header">
-          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            <strong>Aplicacion Organizador de Tareas</strong>
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
-          <p className='text-start detalle'>Aplicacion de Organizador de Tareas.</p>
-          <a href={Tareas} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
-        </div>
-      </div>
-      <div className="accordion-item">
-        <h2 className="accordion-header">
-          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            <strong>Aplicacion Contador de Clicks</strong>
-          </button>
-        </h2>
-        <div id="flush-collapseThree" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
-          <p className='text-start detalle'>Aplicacion de Contador de Clicks.</p>
-          <a href={Contador} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
-        </div>
-      </div>
-  </div>
-    
+    </div>
   );
 }
 
