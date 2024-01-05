@@ -1,8 +1,4 @@
 import '../hojas-de-estilo/app-contenedor.css';
-import Calculadora from '../Imagenes/VistaPreviaCalculadora.png';
-import Testimonios from '../Imagenes/VistaPreviaTestimonios.png';
-import Tareas from '../Imagenes/VistaPreviaOrganizadorTareas.png';
-import Contador from '../Imagenes/VistaPreviaContadorClicks.png';
 
 function AppContenedor (props){
   const calculadora = "https://startling-marzipan-de3cc9.netlify.app";

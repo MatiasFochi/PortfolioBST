@@ -2,6 +2,7 @@ import AppContenedor from './componentes/app-contenedor.js';
 import Cabecera from './componentes/Cabecera.js';
 import './App.css';
 import Formulario from './componentes/Formulario.js';
+import Carrousel from './componentes/carousel.js';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className='container-sm sombreado'>
         <p className='fs-6 espacio'>"Aqui va un breve resumen de mi"</p>
       </div>
+      <Carrousel />
       <AppContenedor />
       <Formulario />
     </div>
