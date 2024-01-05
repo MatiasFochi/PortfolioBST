@@ -1,6 +1,52 @@
 import '../hojas-de-estilo/Formulario.css';
+import { useState } from 'react';
+import $ from 'jquery';
+import emailjs from '@emailjs/browser';
 
 function Formulario (props){
+
+//-------Envio de email-------
+
+  const [inputNombre, setInputNombre] = useState('');
+  const [inputUsuario, setInputUsuario] = useState('');
+  const [inputServer, setInputServer] = useState('');
+  const [inputMensaje, setInputMensaje] = useState('');
+
+  const handleChangeNombre = (event) => {
+    setInputNombre(event.target.value);
+  };
+
+  const handleChangeUsuario = (event) => {
+    setInputUsuario(event.target.value);
+  };
+
+  const handleChangeServer = (event) => {
+    setInputServer(event.target.value);
+  };
+
+  const handleChangeMensaje = (event) => {
+    setInputMensaje(event.target.value);
+  };
+
+  const reiniciarContenidos = () => {
+    setInputMensaje('');
+    setInputNombre('');
+    setInputServer('');
+    setInputUsuario('');
+  };
+
+  var data = {
+    service_id: 'service_66f2vn5',
+    template_id: 'template_zm5bq9q',
+    user_id: 'gSvnKmb1l5LfBM8QG',
+    template_params: {
+        'nombre' : '',
+        'mailFinal' : '',
+        'mensaje' : ''
+    }
+  };
+
+  //-------Alerta cuando se envia el formulario-------
 
   const alertPlaceholder = (e) => {
     document.getElementById('liveAlertPlaceholder').append(e);
@@ -16,12 +62,27 @@ function Formulario (props){
     ].join('')
 
     alertPlaceholder(wrapper);
+
+    setTimeout(() => {
+      wrapper.remove();
+    }, 5000);
   }
 
   const manejarEnvio = e => {
+    data.template_params.mailFinal = inputUsuario + '@' + inputServer;
+    data.template_params.nombre = inputNombre;
+    data.template_params.mensaje = inputMensaje;
     e.preventDefault();
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+      }).done(function() {
+      }).fail(function(error) {
+          alert('Oops... ' + JSON.stringify(error));
+      });
     appendAlert('El mensaje se ha enviado correctamente', 'success');
-    e.target.reset();
+    reiniciarContenidos();
   };
 
 
@@ -32,16 +93,16 @@ function Formulario (props){
       <form className='was-validated espacio espacio-lateral' onSubmit={manejarEnvio}>
         <div className="input-group mb-3 espacio">
           <span className="input-group-text" id="basic-addon1">Nombre</span>
-          <input type="text" className="form-control" placeholder="Ingrese su nombre..." aria-label="Username" aria-describedby="basic-addon1" required/>
+          <input type="text" className="form-control" value={inputNombre} onChange={handleChangeNombre} placeholder="Ingrese su nombre..." aria-label="Username" aria-describedby="basic-addon1" required/>
         </div>
         <div className="input-group mb-3 espacio">
-          <input type="text" className="form-control" placeholder="Username" aria-label="Username" required/>
+          <input type="text" className="form-control" value={inputUsuario} onChange={handleChangeUsuario} placeholder="Username" aria-label="Username" required/>
           <span className="input-group-text">@</span>
-          <input type="text" className="form-control" placeholder="Ejemplo.com" aria-label="Server" required/>
+          <input type="text" className="form-control" value={inputServer} onChange={handleChangeServer} placeholder="Ejemplo.com" aria-label="Server" required/>
         </div>
         <div className="input-group espacio">
           <span className="input-group-text">Mensaje:</span>
-          <textarea className="form-control" aria-label="Escriba aqui..." required></textarea>
+          <textarea className="form-control" value={inputMensaje} onChange={handleChangeMensaje} aria-label="Escriba aqui..." required></textarea>
         </div>
         <div className='d-grid gap-2 col-6 mx-auto'>
           <button className='btn btn-secondary' >Enviar!</button>
