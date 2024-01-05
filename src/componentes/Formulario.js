@@ -1,7 +1,7 @@
 import '../hojas-de-estilo/Formulario.css';
 import { useState } from 'react';
 import $ from 'jquery';
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser';
 
 function Formulario (props){
 
