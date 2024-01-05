@@ -17,7 +17,7 @@ function AppContenedor (props){
           </h2>
           <div id="flush-collapseOne" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
             <p className='text-start detalle'>Aplicacion de calculadora.</p>
-            <a href={calculadora} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
+            <a href={calculadora} target='_blank' rel="noreferrer" className='btn btn-primary'>Ver aplicacion</a>
           </div>
         </div>
         <div className="accordion-item">
@@ -28,7 +28,7 @@ function AppContenedor (props){
           </h2>
           <div id="flush-collapseTwo" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
             <p className='text-start detalle'>Aplicacion de Organizador de Tareas.</p>
-            <a href={Tareas} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
+            <a href={Tareas} target='_blank' rel="noreferrer" className='btn btn-primary'>Ver aplicacion</a>
           </div>
         </div>
         <div className="accordion-item">
@@ -39,7 +39,7 @@ function AppContenedor (props){
           </h2>
           <div id="flush-collapseThree" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
             <p className='text-start detalle'>Aplicacion de Contador de Clicks.</p>
-            <a href={Contador} target='_blank' className='btn btn-primary'>Ver aplicacion</a>
+            <a href={Contador} target='_blank' rel="noreferrer" className='btn btn-primary'>Ver aplicacion</a>
           </div>
         </div>
       </div>
