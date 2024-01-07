@@ -6,7 +6,7 @@ function AppContenedor (props){
   const Contador = "https://cerulean-tartufo-5802ec.netlify.app";
 
   return(
-    <div className='container-sm sombreado espacio'>
+    <div className='container-md sombreado espacio'>
       <h2 className='espacio-lateral espacio text-start'><strong>Aplicaciones</strong></h2>
       <div className="accordion accordion-flush sombreado espacio" id="accordionFlushExample">
         <div className="accordion-item">

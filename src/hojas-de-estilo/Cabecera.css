@@ -28,3 +28,13 @@
     height: 70px;
   }
 }
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+  .perfil{
+    width: 100px;
+  }
+  .perfil-contenedor{
+    width: 100px;
+    height: 100px;
+  }
+}

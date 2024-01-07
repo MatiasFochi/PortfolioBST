@@ -87,7 +87,7 @@ function Formulario (props){
 
 
   return(
-    <div className='container-sm text-center align-items-center sombreado espacio'>
+    <div className='container-md text-center align-items-center sombreado espacio'>
       <h2 className='espacio-lateral espacio text-start'><strong>Contacto</strong></h2>
       <div id="liveAlertPlaceholder"></div>
       <form className='was-validated espacio espacio-lateral' onSubmit={manejarEnvio}>

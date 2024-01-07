@@ -32,8 +32,9 @@ const responsive = {
 
 function Carrousel(){
   return(
-    <div className='container-sm espacio sombreado'>
+    <div className='container-md espacio sombreado'>
       <Carousel  
+        className='carrousell-app'
         swipeable={false}
         draggable={false}
         showDots={false}
@@ -43,7 +44,7 @@ function Carrousel(){
         autoPlay={true}
         autoPlaySpeed={1000}
         keyBoardControl={false}
-        customTransition="all 1"
+        //customTransition="all 1"
         transitionDuration={1000}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile","desktop", "superLargeDesktop"]}
