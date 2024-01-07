@@ -19,13 +19,19 @@ function Cabecera(props) {
       <div className='row col-12 justify-content-md-start espacio'>
         <div className=' col col-md-auto'></div>
         <div className='col col-1'>
-         <a href='https://github.com/MatiasFochi' target='_blank' rel="noreferrer" className="bi bi-github"></a>  
+          <a href='https://github.com/MatiasFochi' target='_blank' rel="noreferrer">
+            <i className='bi bi-github'></i>  
+          </a>  
         </div>
         <div className='col col-1'>
-          <a href='https://www.linkedin.com/in/matias-fochi/' target='_blank' rel="noreferrer" className="bi bi-linkedin"></a>
+          <a href='https://www.linkedin.com/in/matias-fochi/' target='_blank' rel="noreferrer">
+            <i className='bi bi-linkedin'></i>  
+          </a>
         </div>
         <div className='col col-1'>
-          <a href='https://www.instagram.com/matias_fochi?igsh=bXR6ejJhZ3NuNm84' target='_blank' rel="noreferrer" className="bi bi-instagram"></a>
+          <a href='https://www.instagram.com/matias_fochi?igsh=bXR6ejJhZ3NuNm84' target='_blank' rel="noreferrer">
+            <i className='bi bi-instagram'></i> 
+          </a>
         </div>
         <div className='col col-md-auto'></div>
       </div>
