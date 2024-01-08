@@ -8,7 +8,7 @@ import Descripcion from './componentes/Descripcion.js';
 function App() {
 
   return (
-    <div className="container-xl text-center aling-items-center App sombreado">
+    <div className="container-md text-center aling-items-center App sombreado">
       <Cabecera />
       <Descripcion />
       <Carrousel />

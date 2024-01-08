@@ -6,13 +6,13 @@ const Saludo = "Gracias por visitar mi sitio!";
 
 function Descripcion(){
   return(
-    <div className='container-md row justify-content-md-center espacio'>
-      <div className='col col-sm-auto container-sm align-items-center text-start text-wrap fst-italic cv-contenedor espacio espacio-lateral sombreado'>
-        <p className='lh-sm text-start font-monospace fts-italic espacio-lateral' style={{marginTop: 10+ "px"}}>{Parrafo1}</p>
-        <p className='lh-sm text-start font-monospace fts-italic espacio-lateral'>{Parrafo2}</p>
-        <p className='lh-sm text-start font-monospace fts-italic espacio-lateral'>{Parrafo3}</p>
-        <p className='lh-sm text-end font-monospace fts-italic espacio-lateral'>{Parrafo4}</p>
-        <p className='lh-sm text-end font-monospace fts-italic espacio-lateral' style={{marginBottom: 10 + "px"}}>{Saludo}</p>
+    <div className='container-md row justify-content-md-center espaciado'>
+      <div className='col col-sm-auto container-sm align-items-center text-start text-wrap fst-italic cv-contenedor espaciado espaciado-lateral sombreado'>
+        <p className='lh-sm text-start font-monospace fts-italic espaciado-lateral' style={{marginTop: 10+ "px"}}>{Parrafo1}</p>
+        <p className='lh-sm text-start font-monospace fts-italic espaciado-lateral'>{Parrafo2}</p>
+        <p className='lh-sm text-start font-monospace fts-italic espaciado-lateral'>{Parrafo3}</p>
+        <p className='lh-sm text-end font-monospace fts-italic espaciado-lateral'>{Parrafo4}</p>
+        <p className='lh-sm text-end font-monospace fts-italic espaciado-lateral' style={{marginBottom: 10 + "px"}}>{Saludo}</p>
       </div>
     </div>
   );

@@ -87,20 +87,20 @@ function Formulario (props){
 
 
   return(
-    <div className='container-md text-center align-items-center sombreado espacio'>
-      <h2 className='espacio-lateral espacio text-start'><strong>Contacto</strong></h2>
+    <div className='container-md text-center align-items-center sombreado espaciado'>
+      <h2 className='espaciado-lateral espaciado text-start'><strong>Contacto</strong></h2>
       <div id="liveAlertPlaceholder"></div>
-      <form className='was-validated espacio espacio-lateral' onSubmit={manejarEnvio}>
-        <div className="input-group mb-3 espacio">
+      <form className='was-validated espaciado espaciado-lateral' onSubmit={manejarEnvio}>
+        <div className="input-group mb-3 espaciado">
           <span className="input-group-text" id="basic-addon1">Nombre</span>
           <input type="text" className="form-control" value={inputNombre} onChange={handleChangeNombre} placeholder="Ingrese su nombre..." aria-label="Username" aria-describedby="basic-addon1" required/>
         </div>
-        <div className="input-group mb-3 espacio">
+        <div className="input-group mb-3 espaciado">
           <input type="text" className="form-control" value={inputUsuario} onChange={handleChangeUsuario} placeholder="Username" aria-label="Username" required/>
           <span className="input-group-text">@</span>
           <input type="text" className="form-control" value={inputServer} onChange={handleChangeServer} placeholder="Ejemplo.com" aria-label="Server" required/>
         </div>
-        <div className="input-group espacio">
+        <div className="input-group espaciado">
           <span className="input-group-text">Mensaje:</span>
           <textarea className="form-control" value={inputMensaje} onChange={handleChangeMensaje} aria-label="Escriba aqui..." required></textarea>
         </div>

@@ -32,7 +32,7 @@ const responsive = {
 
 function Carrousel(){
   return(
-    <div className='container-md espacio sombreado'>
+    <div className='container-md espaciado sombreado'>
       <Carousel  
         className='carrousell-app'
         swipeable={false}
