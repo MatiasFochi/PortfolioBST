@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Cabecera(props) {
   return(
-    <div className='container-md align-items-center cabecera-contenedor espaciado sombreado row row-cols-2'>
+    <div className='container align-items-center espaciado espaciado-lateral sombreado row row-cols-2 contenedor-principal-cabecera'>
       <div className='row col-12 justify-content-md-start'>
         <div className="card-body col-8 espaciado">
             <p className="card-text text-center fs-1 text-decoration-underline fw-bold">Matias Fochi</p>
@@ -20,17 +20,17 @@ function Cabecera(props) {
         <div className=' col col-md-auto'></div>
         <div className='col col-1'>
           <a href='https://github.com/MatiasFochi' target='_blank' rel="noreferrer">
-            <i className='bi bi-github'></i>  
+            <i className='bi bi-github icono'></i>  
           </a>  
         </div>
         <div className='col col-1'>
           <a href='https://www.linkedin.com/in/matias-fochi/' target='_blank' rel="noreferrer">
-            <i className='bi bi-linkedin'></i>  
+            <i className='bi bi-linkedin icono'></i>  
           </a>
         </div>
         <div className='col col-1'>
           <a href='https://www.instagram.com/matias_fochi?igsh=bXR6ejJhZ3NuNm84' target='_blank' rel="noreferrer">
-            <i className='bi bi-instagram'></i> 
+            <i className='bi bi-instagram icono'></i> 
           </a>
         </div>
         <div className='col col-md-auto'></div>
@@ -40,6 +40,7 @@ function Cabecera(props) {
 }
 
 export default Cabecera;
+
 
 /*
   <div className='container text-center row'>

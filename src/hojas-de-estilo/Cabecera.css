@@ -1,11 +1,14 @@
-*{  --primario: #03585b;
-  --secundario: #02716a;
-  --fondo: #7fbfb0;
-  --adicional1: #f2b49e;
-  --adicional2: #f29580;
+*{ 
+  --MuyOscuro: #000;
+  --Oscuro: #5d1292;
+  --Intermedio: #8e36ce;
+  --Claro: #b46de7 ;
+  --MuyClaro: #b18fc5;
 }
-.cabecera-contenedor{
+.contenedor-principal-cabecera{
   display: flex;
+  background-color: white;
+  height: 250px;
 }
 
 .perfil-contenedor{
@@ -18,23 +21,7 @@
   height: 150px;
 }
 
-@media only screen and (max-width: 576px){
-  .perfil{
-    width: 70px;
-  }
-  .perfil-contenedor{
-    width: 70px;
-    height: 70px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 768px){
-  .perfil{
-    width: 100px;
-  }
-  .perfil-contenedor{
-    width: 100px;
-    height: 100px;
-  }
+.icono{
+  color: whitesmoke;
 }
 

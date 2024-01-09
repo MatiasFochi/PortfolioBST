@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
+import '../hojas-de-estilo/carousel.css';
 import Bootstrap from '../logos/bootstrap.png';
 import Css from '../logos/css.png';
 import Figma from '../logos/figma.png';
@@ -32,7 +32,7 @@ const responsive = {
 
 function Carrousel(){
   return(
-    <div className='container-md espaciado sombreado'>
+    <div className='container container-md espaciado espaciado-lateral sombreado contenedor-principal-carousel'>
       <Carousel  
         className='carrousell-app'
         swipeable={false}

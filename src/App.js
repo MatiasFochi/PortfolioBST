@@ -8,12 +8,22 @@ import Descripcion from './componentes/Descripcion.js';
 function App() {
 
   return (
-    <div className="container-md text-center aling-items-center App sombreado">
-      <Cabecera />
-      <Descripcion />
-      <Carrousel />
-      <AppContenedor />
-      <Formulario />
+    <div className="App sombreado d-flex flex-column align-items-center">
+      <section className='Seccion1'>
+        <Cabecera />
+      </section>  
+      <section className='Seccion1'>  
+        <Descripcion />
+      </section>
+      <section className='Seccion2'>
+        <Carrousel />
+      </section>
+      <section className='Seccion3'>
+        <AppContenedor />
+      </section>
+      <section className='Seccion3'>
+        <Formulario />
+      </section>
     </div>
   );
 }

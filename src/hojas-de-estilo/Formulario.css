@@ -1,7 +1,25 @@
-*{  --primario: #03585b;
-  --secundario: #02716a;
-  --fondo: #7fbfb0;
-  --adicional1: #f2b49e;
-  --adicional2: #f29580;
+*{  
+  --MuyOscuro: #000;
+  --Oscuro: #5d1292;
+  --Intermedio: #8e36ce;
+  --Claro: #b46de7 ;
+  --MuyClaro: #b18fc5;
 }
 
+.btn-outline-custom{
+  color:var(--Oscuro);
+  border-color:var(--Oscuro);
+  background-color:white;
+}
+
+.btn-outline-custom:hover{
+  color:white;
+  border-color:white;
+  background-color: var(--Intermedio);
+}
+
+.alert-custom{
+  color:white;
+  border-color:white;
+  background-color: var(--Intermedio);
+}

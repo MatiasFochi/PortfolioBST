@@ -81,13 +81,13 @@ function Formulario (props){
       }).fail(function(error) {
           alert('Oops... ' + JSON.stringify(error));
       });
-    appendAlert('El mensaje se ha enviado correctamente', 'success');
+    appendAlert('El mensaje se ha enviado correctamente', 'custom');
     reiniciarContenidos();
   };
 
 
   return(
-    <div className='container-md text-center align-items-center sombreado espaciado'>
+    <div className='container container-md text-center align-items-center sombreado espaciado espaciado-lateral contenedor-principal-formulario'>
       <h2 className='espaciado-lateral espaciado text-start'><strong>Contacto</strong></h2>
       <div id="liveAlertPlaceholder"></div>
       <form className='was-validated espaciado espaciado-lateral' onSubmit={manejarEnvio}>
@@ -105,7 +105,7 @@ function Formulario (props){
           <textarea className="form-control" value={inputMensaje} onChange={handleChangeMensaje} aria-label="Escriba aqui..." required></textarea>
         </div>
         <div className='d-grid gap-2 col-6 mx-auto'>
-          <button className='btn btn-secondary' >Enviar!</button>
+          <button className='btn btn-outline-custom' >Enviar!</button>
         </div>
       </form>
     </div> 

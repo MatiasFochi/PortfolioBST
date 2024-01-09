@@ -1,15 +1,43 @@
-*{  --primario: #03585b;
-  --secundario: #02716a;
-  --fondo: #7fbfb0;
-  --adicional1: #f2b49e;
-  --adicional2: #f29580;
+*{  
+  --MuyOscuro: #000;
+  --Oscuro: #5d1292;
+  --Intermedio: #8e36ce;
+  --Claro: #b46de7 ;
+  --MuyClaro: #b18fc5;
 }
 
 .App{
   background-color: white;
-  display: block;
-  margin: auto auto auto;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
+
+.Seccion2,
+.Seccion4{
+  background-color: var(--Oscuro);
+}
+.Seccion1,
+.Seccion3,
+.Seccion5{
+  background-color: white;
+}
+
+.Seccion1,
+.Seccion2,
+.Seccion3,
+.Seccion4,
+.Seccion5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  min-height: 350px;
+}
+
 
 .espaciado{
   margin: 16px 0;
@@ -23,3 +51,44 @@
   border-radius: 7px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
+
+.contenedor-principal-cabecera,
+.contenedor-principal-descripcion,
+.contenedor-principal-carousel,
+.contenedor-principal-aplicaciones,
+.contenedor-principal-formulario{
+  max-width: 90%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contenedor-principal-cabecera,
+.contenedor-principal-descripcion,
+.contenedor-principal-aplicaciones,
+.titulo-aplicaciones,
+.contenedor-principal-formulario{
+  color: whitesmoke;
+  background-color: var(--Oscuro);
+}
+
+@media only screen and (max-width: 576px){
+  .perfil{
+    width: 70px;
+  }
+  .perfil-contenedor{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+  .perfil{
+    width: 100px;
+  }
+  .perfil-contenedor{
+    width: 100px;
+    height: 100px;
+  }
+}
+

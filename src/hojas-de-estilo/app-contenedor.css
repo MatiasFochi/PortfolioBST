@@ -1,9 +1,15 @@
 *{
-  --primario: #03585b;
-  --secundario: #02716a;
-  --fondo: #7fbfb0;
-  --adicional1: #f2b49e;
-  --adicional2: #f29580;
+  --MuyOscuro: #000;
+  --Oscuro: #5d1292;
+  --Intermedio: #8e36ce;
+  --Claro: #b46de7 ;
+  --MuyClaro: #b18fc5;
+}
+
+.contenedor-principal-aplicaciones,
+.titulo-aplicaciones,
+.acordeon-aplicaciones{
+  background-color: white;
 }
 
 .contenedor-oculto{
@@ -18,4 +24,16 @@
   border: 0.125rem solid rgba(0, 0, 0, 0.075);
   border-radius: 7px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.btn-custom{
+  color:white;
+  border-color:white;
+  background-color: var(--Oscuro);
+}
+
+.btn-custom:hover{
+  color:var(--Oscuro);
+  border-color:var(--Oscuro);
+  background-color: white;
 }

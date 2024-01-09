@@ -1,0 +1,12 @@
+*{ 
+  --MuyOscuro: #000;
+  --Oscuro: #5d1292;
+  --Intermedio: #8e36ce;
+  --Claro: #b46de7 ;
+  --MuyClaro: #b18fc5;
+}
+
+.contenedor-descripcion{
+  color: var(--Oscuro);
+  background-color: whitesmoke;
+}

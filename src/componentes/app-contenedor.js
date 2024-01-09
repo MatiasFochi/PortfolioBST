@@ -1,14 +1,14 @@
 import '../hojas-de-estilo/app-contenedor.css';
 
-function AppContenedor (props){
-  const calculadora = "https://startling-marzipan-de3cc9.netlify.app";
-  const Tareas = "https://soft-liger-d3063a.netlify.app";
-  const Contador = "https://cerulean-tartufo-5802ec.netlify.app";
+const calculadora = "https://startling-marzipan-de3cc9.netlify.app";
+const Tareas = "https://soft-liger-d3063a.netlify.app";
+const Contador = "https://cerulean-tartufo-5802ec.netlify.app";
 
+function AppContenedor (props){
   return(
-    <div className='container-md sombreado espaciado'>
-      <h2 className='espaciado-lateral espaciado text-start'><strong>Aplicaciones</strong></h2>
-      <div className="accordion accordion-flush sombreado espaciado" id="accordionFlushExample">
+    <div className='container container-md sombreado espaciado espaciado-lateral contenedor-principal-aplicaciones'>
+      <h2 className='espaciado-lateral espaciado text-start titulo-aplicaciones'><strong>Aplicaciones</strong></h2>
+      <div className="accordion accordion-flush sombreado espaciado acordeon-aplicaciones" id="accordionFlushExample">
         <div className="accordion-item">
           <h2 className="accordion-header">
             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -17,7 +17,7 @@ function AppContenedor (props){
           </h2>
           <div id="flush-collapseOne" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
             <p className='text-start detalle'>Aplicacion de calculadora.</p>
-            <a href={calculadora} target='_blank' rel="noreferrer" className='btn btn-primary'>Ver aplicacion</a>
+            <a href={calculadora} target='_blank' rel="noreferrer" className='btn btn-custom'>Ver aplicacion</a>
           </div>
         </div>
         <div className="accordion-item">
@@ -28,7 +28,7 @@ function AppContenedor (props){
           </h2>
           <div id="flush-collapseTwo" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
             <p className='text-start detalle'>Aplicacion de Organizador de Tareas.</p>
-            <a href={Tareas} target='_blank' rel="noreferrer" className='btn btn-primary'>Ver aplicacion</a>
+            <a href={Tareas} target='_blank' rel="noreferrer" className='btn btn-custom'>Ver aplicacion</a>
           </div>
         </div>
         <div className="accordion-item">
@@ -39,7 +39,7 @@ function AppContenedor (props){
           </h2>
           <div id="flush-collapseThree" className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
             <p className='text-start detalle'>Aplicacion de Contador de Clicks.</p>
-            <a href={Contador} target='_blank' rel="noreferrer" className='btn btn-primary'>Ver aplicacion</a>
+            <a href={Contador} target='_blank' rel="noreferrer" className='btn btn-custom'>Ver aplicacion</a>
           </div>
         </div>
       </div>
@@ -48,6 +48,50 @@ function AppContenedor (props){
 }
 
 export default AppContenedor;
+
+
+//Intento de escalabilidad para el acordeon
+
+/*
+import ComponenteAcordeon from './acordeon-componente.js';
+
+Props de ComponenteAcordeon:
+  orden: se debe ingresar, en ingles, el orden de la aplicacion (one, two, three, etc).
+  nombreApp: es el nombre propio de la aplicacion, sin espacios.
+  descripcionApp: el string que ira como descripcion de la aplicacion.
+  linkRef: es el hipervinculo de la aplicacion.
+
+  function ComponenteAcordeon({ orden , nombreApp , descripcionApp , linkRef }){
+
+  //Hace que la primer letra del string ingresado sea una mayuscula y el resto minuscula
+  function Capitalize(s) {
+      s = s.trim();
+      s = s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+      s.toString();
+      return s;
+    }
+
+    //Esta variable es la que dara el orden mediante el prop orden
+    let ordenProcesado = "#flush-collapse"+orden;
+
+    return(
+      <div className="accordion-item">
+        <h2 className="accordion-header">
+          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={ordenProcesado} aria-expanded="false" aria-controls={ordenProcesado}>
+            <strong>Aplicacion {nombreApp}</strong>
+          </button>
+        </h2>
+        <div id={ordenProcesado} className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
+          <p className='text-start detalle'>{descripcionApp}</p>
+          <a href={linkRef} target='_blank' rel="noreferrer" className='btn btn-custom'>Ver aplicacion</a>
+        </div>
+      </div>
+    );
+  }
+
+export default ComponenteAcordeon;
+*/
+
 
 //Acordion always open
 
