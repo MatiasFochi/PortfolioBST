@@ -12,16 +12,16 @@ function App() {
       <section className='Seccion1'>
         <Cabecera />
       </section>  
-      <section className='Seccion1'>  
+      <section className='Seccion2'>  
         <Descripcion />
       </section>
-      <section className='Seccion2'>
+      <section className='Seccion3'>
         <Carrousel />
       </section>
-      <section className='Seccion3'>
+      <section className='Seccion4'>
         <AppContenedor />
       </section>
-      <section className='Seccion3'>
+      <section className='Seccion5'>
         <Formulario />
       </section>
     </div>

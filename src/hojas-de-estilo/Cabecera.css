@@ -21,7 +21,15 @@
   height: 150px;
 }
 
+.icono-contenedor{
+  font-size: 30px;
+}
+
 .icono{
   color: whitesmoke;
 }
 
+.cabecera-titulo-principal,
+.cabecera-titulo-secundario{
+  font-family: "Montserrat";
+}

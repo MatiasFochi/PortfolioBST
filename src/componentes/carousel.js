@@ -14,19 +14,27 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 7
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
+    items: 6
+  },
+  desktopMini: {
+    breakpoint: { max: 1024, min: 840 },
     items: 5
   },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
+  tabletBig: {
+    breakpoint: { max: 840, min: 610 },
     items: 4
   },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
+  tablet: {
+    breakpoint: { max: 610, min: 411 },
     items: 3
+  },
+  mobile: {
+    breakpoint: { max: 411, min: 0 },
+    items: 2
   }
 };
 
@@ -47,7 +55,7 @@ function Carrousel(){
         //customTransition="all 1"
         transitionDuration={1000}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile","desktop", "superLargeDesktop"]}
+        removeArrowOnDeviceType={["tablet", "mobile", "tabletBig" , "desktopMini", "desktop", "superLargeDesktop"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px">
         <div>

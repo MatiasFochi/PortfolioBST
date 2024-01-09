@@ -66,7 +66,7 @@ function Formulario (props){
     setTimeout(() => {
       wrapper.remove();
     }, 5000);
-  }
+  };
 
   const manejarEnvio = e => {
     data.template_params.mailFinal = inputUsuario + '@' + inputServer;
@@ -88,7 +88,7 @@ function Formulario (props){
 
   return(
     <div className='container container-md text-center align-items-center sombreado espaciado espaciado-lateral contenedor-principal-formulario'>
-      <h2 className='espaciado-lateral espaciado text-start'><strong>Contacto</strong></h2>
+      <h2 className='espaciado-lateral espaciado text-start text-decoration-underline'><strong>Contacto</strong></h2>
       <div id="liveAlertPlaceholder"></div>
       <form className='was-validated espaciado espaciado-lateral' onSubmit={manejarEnvio}>
         <div className="input-group mb-3 espaciado">

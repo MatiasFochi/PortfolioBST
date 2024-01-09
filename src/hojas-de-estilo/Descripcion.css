@@ -7,6 +7,14 @@
 }
 
 .contenedor-descripcion{
-  color: var(--Oscuro);
-  background-color: whitesmoke;
+  color: white;
+  background-color: var(--Intermedio);
 }
+
+/*
+#descripcion{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+*/
