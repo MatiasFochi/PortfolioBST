@@ -69,12 +69,22 @@
 .contenedor-principal-descripcion,
 .contenedor-principal-aplicaciones,
 .contenedor-principal-formulario{
-  max-width: 75%;
   margin: auto;
   border: 1px solid var(--Oscuro);
   background-color: white;
   border-radius: 10px;
 }
+
+.contenedor-principal-descripcion,
+.contenedor-principal-cabecera,
+.contenedor-principal-aplicaciones{
+  max-width: 75%;
+}
+
+.contenedor-principal-formulario{
+  max-width: 50%;
+}
+
 
 .contenedor-principal-carousel{
   max-width: 90%;
@@ -109,7 +119,7 @@
   font-size: calc(1.375rem + 1.5vw);
 }
 .cabecera-titulo-secundario{
-  font-size: calc(1.3rem + .1vw);
+  font-size: calc(1.2rem + .1vw);
 }
 
 @media only screen and (min-width: 486px) and (max-width: 610px){
@@ -134,7 +144,7 @@
 @media only screen and (min-width: 413px) and (max-width: 486px){
   .cabecera-titulo-principal,
   .cabecera-titulo-secundario{
-    width: 185px;
+    width: 220px;
   }
 
   .cabecera-titulo-principal{
@@ -145,12 +155,18 @@
   }
 
   .icono{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .perfil{
     width: 80px;
     height: 80px;
+  }
+  .contenedor-principal-cabecera,
+  .contenedor-principal-descripcion,
+  .contenedor-principal-aplicaciones,
+  .contenedor-principal-formulario{
+    max-width: 95%;
   }
 }
 
@@ -171,7 +187,7 @@
 
   .icono{
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .perfil{

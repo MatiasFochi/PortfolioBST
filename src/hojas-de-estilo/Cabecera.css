@@ -5,16 +5,11 @@
   --Claro: #b46de7 ;
   --MuyClaro: #b18fc5;
 }
+
 .contenedor-principal-cabecera{
-  display: flex;
-  background-color: white;
-  height: 250px;
+  min-height: 250px;
 }
 
-.perfil-contenedor{
-  width: 150px;
-  height: 150px;
-}
 .perfil{
   border-radius: 100%;
   width: 150px;

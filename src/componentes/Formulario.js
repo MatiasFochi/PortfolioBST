@@ -110,7 +110,7 @@ function Formulario (props){
           <textarea className="form-control" value={inputMensaje} onChange={handleChangeMensaje} aria-label="Escriba aqui..." required ></textarea>
         </div>
         <div className='d-grid gap-2 col-6 mx-auto'>
-          <button className='btn btn-outline-custom' >Enviar!</button>
+          <button className='btn btn-custom' >Enviar!</button>
         </div>
       </form>
     </div> 
