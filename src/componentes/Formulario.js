@@ -46,6 +46,23 @@ function Formulario (props){
     }
   };
 
+  const enviarMail = e => {
+    data.template_params.mailFinal = inputUsuario + '@' + inputServer;
+    data.template_params.nombre = inputNombre;
+    data.template_params.mensaje = inputMensaje;
+    e.preventDefault();
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+      }).done(function() {
+      }).fail(function(error) {
+          alert('Oops... ' + JSON.stringify(error));
+      });
+    appendAlert('El mensaje se ha enviado correctamente', 'custom');
+    reiniciarContenidos();
+  };
+
   //-------Alerta cuando se envia el formulario-------
 
   const alertPlaceholder = (e) => {
@@ -68,41 +85,29 @@ function Formulario (props){
     }, 5000);
   };
 
+  //Funcion onSubmit
   const manejarEnvio = e => {
-    data.template_params.mailFinal = inputUsuario + '@' + inputServer;
-    data.template_params.nombre = inputNombre;
-    data.template_params.mensaje = inputMensaje;
     e.preventDefault();
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-        type: 'POST',
-        data: JSON.stringify(data),
-        contentType: 'application/json'
-      }).done(function() {
-      }).fail(function(error) {
-          alert('Oops... ' + JSON.stringify(error));
-      });
-    appendAlert('El mensaje se ha enviado correctamente', 'custom');
-    reiniciarContenidos();
+    enviarMail(e);
   };
 
-
   return(
-    <div className='container container-md text-center align-items-center sombreado espaciado espaciado-lateral contenedor-principal-formulario'>
-      <h2 className='espaciado-lateral espaciado text-start text-decoration-underline'><strong>Contacto</strong></h2>
+    <div className='container text-center align-items-center sombreado espaciado contenedor-principal-formulario'>
+      <h2 className='espaciado-lateral espaciado text-start'><strong>Contacto</strong></h2>
       <div id="liveAlertPlaceholder"></div>
       <form className='was-validated espaciado espaciado-lateral' onSubmit={manejarEnvio}>
         <div className="input-group mb-3 espaciado">
           <span className="input-group-text" id="basic-addon1">Nombre</span>
-          <input type="text" className="form-control" value={inputNombre} onChange={handleChangeNombre} placeholder="Ingrese su nombre..." aria-label="Username" aria-describedby="basic-addon1" required/>
+          <input type="text" className="form-control" value={inputNombre} onChange={handleChangeNombre} placeholder="Ingrese su nombre..." aria-label="Username" aria-describedby="basic-addon1" required />
         </div>
         <div className="input-group mb-3 espaciado">
-          <input type="text" className="form-control" value={inputUsuario} onChange={handleChangeUsuario} placeholder="Username" aria-label="Username" required/>
+          <input type="text" className="form-control" value={inputUsuario} onChange={handleChangeUsuario} placeholder="Username" aria-label="Username" required />
           <span className="input-group-text">@</span>
-          <input type="text" className="form-control" value={inputServer} onChange={handleChangeServer} placeholder="Ejemplo.com" aria-label="Server" required/>
+          <input type="text" className="form-control" value={inputServer} onChange={handleChangeServer} placeholder="Ejemplo.com" aria-label="Server" required />
         </div>
         <div className="input-group espaciado">
           <span className="input-group-text">Mensaje:</span>
-          <textarea className="form-control" value={inputMensaje} onChange={handleChangeMensaje} aria-label="Escriba aqui..." required></textarea>
+          <textarea className="form-control" value={inputMensaje} onChange={handleChangeMensaje} aria-label="Escriba aqui..." required ></textarea>
         </div>
         <div className='d-grid gap-2 col-6 mx-auto'>
           <button className='btn btn-outline-custom' >Enviar!</button>

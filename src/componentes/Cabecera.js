@@ -11,13 +11,13 @@ import "@fontsource/montserrat/400-italic.css"; // Especificar peso y estilo
 
 function Cabecera(props) {
   return(
-    <div className='container align-content-center justify-content-center espaciado espaciado-lateral sombreado row row-cols-2 contenedor-principal-cabecera'>
-      <div className='row col col-8 justify-content-md-start columna-cabecera1'>
-        <div className="card-body col espaciado columna-cabecera-titulos">
-            <p className="card-text text-center fs-1 text-decoration-underline fw-bold cabecera-titulo-principal">Matias Fochi</p>
-            <p className="card-text text-center fs-3 fw-semibold cabecera-titulo-secundario">Desarrollador Front-End</p>
+    <div className='container align-items-center justify-content-center espaciado espaciado-lateral sombreado row row-cols-2 contenedor-principal-cabecera'>
+      <div className='row col col-8 justify-content-center'>
+        <div className="card-body col espaciado">
+            <p className="card-text text-center  fw-bold cabecera-titulo-principal">Matias Fochi</p>
+            <p className="card-text text-center  fw-semibold cabecera-titulo-secundario">Desarrollador Front-End</p>
         </div>
-        <div className='row col justify-content-center espaciado columna-cabecera-links'>
+        <div className='row col justify-content-center espaciado-lateral'>
           <div className='col col-sm-auto icono-contenedor'>
             <a href='https://github.com/MatiasFochi' target='_blank' rel="noreferrer">
               <i className='bi bi-github icono'></i>  
@@ -35,7 +35,7 @@ function Cabecera(props) {
           </div>
         </div>
       </div>      
-      <div className="col col-4 align-items-center perfil espaciado espaciado-lateral" >
+      <div className="col col-4 perfil espaciado espaciado-lateral" >
         <img src={FotoPerfil} className="perfil" alt="Foto de perfil" />
       </div>
     </div>

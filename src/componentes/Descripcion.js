@@ -1,9 +1,9 @@
 import '../hojas-de-estilo/Descripcion.css';
 import { useState } from 'react';
 
-const Parrafo1 = "Hola! mi nombre es Matias Fochi.";
-const Parrafo2 = "Tengo 25 años y actualmente resido en Junin, Bs As, Argentina. Me considero una persona comunicativa, positiva, detallista, ordenada y curiosa, capaz de trabajar tanto individual como colectivamente. Me adapto fácilmente a cualquier circunstancia buscando crecer y aprender profesionalmente todo el tiempo. Soy un estudiante de tercer año de la carrera de Licenciatura en Sistemas en la Universidad Nacional del Noroeste de la provincia de Buenos Aires (UNNOBA). ";
-const Parrafo3 = "Me apasiona el desarrollo front-end y estoy siempre dispuesto a incorporar nuevas tecnologias y herramientas para mejorar mi desempeño.";
+const Parrafo1 = "Hola! Mi nombre es Matias Fochi.";
+const Parrafo2 = "Tengo 25 años y actualmente resido en Junín, Bs As, Argentina. Me considero una persona comunicativa, positiva, detallista, ordenada y curiosa, capaz de trabajar tanto individual como colectivamente. Me adapto fácilmente a cualquier circunstancia buscando crecer y aprender profesionalmente todo el tiempo. Soy un estudiante de tercer año de la carrera de Licenciatura en Sistemas en la Universidad Nacional del Noroeste de la provincia de Buenos Aires (UNNOBA). ";
+const Parrafo3 = "Me apasiona el desarrollo front-end y estoy siempre dispuesto a incorporar nuevas tecnologías y herramientas para mejorar mi desempeño.";
 const Saludo1 = "Espero que disfrutes navegar por mi Portfolio.";
 const Saludo2 = "Gracias por visitar mi sitio!";
 
@@ -29,7 +29,7 @@ function Descripcion(){
 
   return(
     <div className='container container-md row justify-content-center espaciado espaciado-lateral contenedor-principal-descripcion'>
-      <div className='col container-sm align-items-center fst-italic espaciado espaciado-lateral sombreado contenedor-descripcion'>
+      <div className='col container-sm align-items-center espaciado espaciado-lateral sombreado contenedor-descripcion'>
         <p className='lh-sm text-center text-wrap font-monospace fts-italic espaciado espaciado-lateral'>
           {Parrafo1}<br/>
         </p>
