@@ -8,7 +8,7 @@ import Descripcion from './componentes/Descripcion.js';
 function App() {
 
   return (
-    <div className="App sombreado d-flex flex-column align-items-center">
+    <div className="App d-flex flex-column align-items-center">
       <section className='Seccion1'>
         <Cabecera />
       </section>  
@@ -24,6 +24,10 @@ function App() {
       <section className='Seccion5'>
         <Formulario />
       </section>
+      <div className='footer'>
+        {"by "}
+        <a href='https://www.linkedin.com/in/matias-fochi/' target='_blank' rel='noreferrer' className='texto-footer' >MatiasFochi</a>
+      </div>
     </div>
   );
 }
