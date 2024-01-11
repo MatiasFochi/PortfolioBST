@@ -42,6 +42,17 @@ function AppContenedor (props){
             <a href={Contador} target='_blank' rel="noreferrer" className='btn btn-custom'>Ver aplicación</a>
           </div>
         </div>
+        <div className="accordion-item">
+        <h2 className="accordion-header">
+          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            <strong>Aplicacion Frases Aleatorias</strong>
+          </button>
+        </h2>
+        <div id='flush-collapseFour' className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
+          <p className='text-start detalle'>Aplicacion de frases aleatorias.</p>
+          <a href='https://65a00cbb3597b10008a4f01b--strong-axolotl-d5d04f.netlify.app/' target='_blank' rel="noreferrer" className='btn btn-custom'>Ver aplicacion</a>
+        </div>
+      </div>
       </div>
     </div>
   );
