@@ -24,6 +24,11 @@
   color: whitesmoke;
 }
 
+.foto-logo{
+  height: 40px;
+  width: 40px;
+}
+
 .cabecera-titulo-principal,
 .cabecera-titulo-secundario{
   font-family: "Montserrat";

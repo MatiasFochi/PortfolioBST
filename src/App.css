@@ -172,6 +172,12 @@
     font-size: 1.4rem;
   }
 
+  .foto-logo{
+    margin-top: 1px;
+    height: 20px;
+    width: 22.4px;
+  }
+
   .perfil{
     width: 80px;
     height: 80px;
@@ -202,6 +208,12 @@
   .icono{
     margin: 0 auto;
     font-size: 1.2rem;
+  }
+
+  .foto-logo{
+    margin-top: 1px;
+    height: 20px;
+    width: 22.4px;
   }
 
   .perfil{
