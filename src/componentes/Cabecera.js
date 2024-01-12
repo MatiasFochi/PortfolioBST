@@ -35,7 +35,7 @@ function Cabecera(props) {
             </a>
           </div>
           <div className='col col-sm-auto icono-contenedor'>
-              <img src={LogoMF} className='foto-logo'/> 
+              <img src={LogoMF} alt='Logo Matias Fochi' className='foto-logo'/> 
           </div>
         </div>
       </div>      
