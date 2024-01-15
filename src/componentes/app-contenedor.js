@@ -46,7 +46,7 @@ function AppContenedor (props){
         <div className="accordion-item">
           <h2 className="accordion-header">
             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-              <strong>Aplicacion Frases Aleatorias</strong>
+              <strong>Aplicación Frases Aleatorias</strong>
             </button>
           </h2>
           <div id='flush-collapseFour' className="accordion-collapse collapse text-end contenedor-oculto" data-bs-parent="#accordionFlushExample">
