@@ -1,14 +1,9 @@
 import FotoPerfil from '../Imagenes/FotoPerfil.jpeg';
 import '../hojas-de-estilo/Cabecera.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "@fontsource/montserrat"; // Peso por defecto 400
-import "@fontsource/montserrat/400.css"; // Especificar peso
-import "@fontsource/montserrat/400-italic.css"; // Especificar peso y estilo
-import LogoMF from '../logos/LogoPersonalBlanco.png';
-
-
-
-//Agrandar columnas
+import "@fontsource/montserrat";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/400-italic.css";
 
 function Cabecera(props) {
   return(
@@ -33,9 +28,6 @@ function Cabecera(props) {
             <a href='https://www.instagram.com/matias_fochi?igsh=bXR6ejJhZ3NuNm84' target='_blank' rel="noreferrer">
               <i className='bi bi-instagram icono'></i> 
             </a>
-          </div>
-          <div className='col col-sm-auto icono-contenedor'>
-              <img src={LogoMF} alt='Logo Matias Fochi' className='foto-logo'/> 
           </div>
         </div>
       </div>      
