@@ -12,6 +12,11 @@
   background-color: white;
 }
 
+.contenedor-principal-aplicaciones{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .contenedor-oculto{
   margin: 10px 30px;
 }

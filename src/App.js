@@ -5,6 +5,8 @@ import Formulario from './componentes/Formulario.js';
 import Carrousel from './componentes/carousel.js';
 import Descripcion from './componentes/Descripcion.js';
 
+//<img className='FondoLogos' src={FONDO} alt='Fondo de logos' />
+
 function App() {
 
   return (
@@ -12,7 +14,7 @@ function App() {
       <section className='Seccion1'>
         <Cabecera />
       </section>  
-      <section className='Seccion2'>  
+      <section className='Seccion2'>
         <Descripcion />
       </section>
       <section className='Seccion3'>
