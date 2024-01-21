@@ -107,16 +107,16 @@
 .contenedor-principal-descripcion,
 .contenedor-principal-cabecera,
 .contenedor-principal-aplicaciones{
-  max-width: 75%;
+  width: 75%;
 }
 
 .contenedor-principal-formulario{
-  max-width: 60%;
+  width: 60%;
 }
 
 
 .contenedor-principal-carousel{
-  max-width: 90%;
+  width: 90%;
   margin: auto;
   border: 1px solid var(--Oscuro);
   background-color: white;
@@ -145,109 +145,329 @@
 /*----------BREAKPOINTS----------*/
 
 .cabecera-titulo-principal{
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: 32px;
 }
 .cabecera-titulo-secundario{
-  font-size: calc(1.2rem + .1vw);
+  font-size: 22px;
+}
+.contenedor-texto-cabecera{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.iconos-contenedor-cabecera{
+  margin-top: 10px;
 }
 
-@media only screen and (min-width: 486px) and (max-width: 650px){
-  .cabecera-titulo-principal,
+/* .icono-contenedor{
+  height: 25px;
+  font-size: 25px;
+} */
+
+@media screen and (min-width: 1002px) and (max-width: 1084px) {
+  .cabecera-titulo-principal{
+    font-size: 32px;
+  }
   .cabecera-titulo-secundario{
-    width: 230px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 985px) and (max-width: 1002px) {
+  .contenedor-texto-cabecera{
+    height: 130px;
+  }
+  
+  .cabecera-titulo-principal{
+    font-size: 29px;
+  }
+  .cabecera-titulo-secundario{
+    font-size: 22px;
+  }
+
+  .logo-cabecera,
+  .perfil{
+    height: 130px;
+    width: 130px;
+  }
+}
+
+
+@media screen and (min-width: 925px) and (max-width: 985px) {
+  .contenedor-texto-cabecera{
+    height: 115px;
+  }
+  
+  .cabecera-titulo-principal{
+    font-size: 29px;
+  }
+  .cabecera-titulo-secundario{
+    font-size: 22px;
+  }
+  .icono{
+    font-size: 22px;
+  }
+
+  .logo-cabecera,
+  .perfil{
+    height: 115px;
+    width: 115px;
+  }
+}
+
+@media screen and (min-width: 778px) and (max-width: 925px) {
+  
+  .contenedor-texto-cabecera{
+    height: 115px;
+  }
+
+  .iconos-contenedor-cabecera{
+    justify-content: space-evenly !important;
+  }
+  
+  .cabecera-titulo-principal{
+    font-size: 27px;
+  }
+  .cabecera-titulo-secundario{
+    font-size: 20px;
+  }
+  .icono{
+    font-size: 20px;
+  }
+
+  .logo-cabecera,
+  .perfil{
+    height: 115px;
+    width: 115px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 778px) {
+  
+  .contenedor-texto-cabecera{
+    height: 115px;
+    width: 210px;
+  }
+  .iconos-contenedor-cabecera{
+    height: 30px;
+    justify-content: space-evenly !important;
+  }
+
+  .icono-contenedor{
+    height: 30px;
+    width: 30px;
   }
 
   .cabecera-titulo-principal{
-    font-size: calc(1.2rem + 1.5vw);
+    font-size: 25px;
   }
   .cabecera-titulo-secundario{
-    font-size: calc(1rem + .1vw);
+    font-size: 18px;
+  }
+  .icono{
+    font-size: 18px;
+  }
+
+  
+  .logo-cabecera-contenedor,
+  .perfil-cabecera-contenedor{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .logo-cabecera,
+  .perfil{
+    height: 115px;
+    width: 115px;
+  }
+
+  .perfil{
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (min-width: 486px) and (max-width: 649px){
+  .contenedor-texto-cabecera{
+    height: 100px;
   }
   
-  .perfil{
+  .cabecera-titulo-principal,
+  .cabecera-titulo-secundario{
+    height: 35px;
+    width: 190px;
+  }
+
+  .contenedor-titulo,
+  .contenedor-subtitulo{
+    height: 35px;
+  }
+
+  .iconos-contenedor-cabecera{
+    height: 30px;
+    justify-content: space-evenly !important;
+  }
+
+  .icono-contenedor{
+    height: 30px;
+    width: 30px;
+  }
+
+  .cabecera-titulo-principal{
+    font-size: 23px;
+  }
+  .cabecera-titulo-secundario{
+    font-size: 16px;
+  }
+  .icono{
+    font-size: 16px;
+  }
+
+  .logo-cabecera-contenedor,
+  .perfil-cabecera-contenedor{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .perfil,
+  .logo-cabecera{
     width: 100px;
     height: 100px;
   }
+
+  .perfil{
+    transform: scale(1.1);
+  }
+
   .contenedor-principal-cabecera,
   .contenedor-principal-descripcion,
   .contenedor-principal-aplicaciones,
   .contenedor-principal-formulario{
-    max-width: 90%;
+    width: 90%;
   }
 
 }
 
 @media only screen and (min-width: 413px) and (max-width: 486px){
+  .contenedor-texto-cabecera{
+    height: 80px;
+  }
+  
   .cabecera-titulo-principal,
   .cabecera-titulo-secundario{
-    width: 220px;
+    height: 35px;
+    width: 190px;
+  }
+  .contenedor-titulo,
+  .contenedor-subtitulo{
+    height: 35px;
   }
 
+  .iconos-contenedor-cabecera{
+    height: 30px;
+    justify-content: space-evenly !important;
+  }
+
+  .icono-contenedor{
+    height: 30px;
+    width: 30px;
+  }
+
+
   .cabecera-titulo-principal{
-    font-size: calc(1.2rem + 1.5vw);
+    font-size: 23px;
   }
   .cabecera-titulo-secundario{
-    font-size: calc(1rem + .1vw);
+    font-size: 16px;
   }
 
   .icono{
-    font-size: 1.4rem;
+    font-size: 16px;
+  }
+  
+  .logo-cabecera-contenedor,
+  .perfil-cabecera-contenedor{
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  .foto-logo{
-    margin-top: 1px;
-    height: 20px;
-    width: 22.4px;
-  }
-
-  .perfil{
+  .perfil,
+  .logo-cabecera{
     width: 80px;
     height: 80px;
   }
+
+  .perfil{
+    transform: scale(1.1);
+  }
+
   .contenedor-principal-cabecera,
   .contenedor-principal-descripcion,
   .contenedor-principal-aplicaciones,
   .contenedor-principal-formulario{
-    max-width: 95%;
+    width: 95%;
   }
 }
 
 @media only screen and (max-width: 413px){
-  .cabecera-titulo-principal,
-  .cabecera-titulo-secundario{
-    margin: 0 auto;
-    width: 200px;
-  }
-
-  .cabecera-titulo-principal{
-    font-size: calc(1.2rem + 1.5vw);
-    margin-bottom: 12px;
-  }
-  .cabecera-titulo-secundario{
-    font-size: calc(1rem + .1vw);
-  }
-
-  .icono{
-    margin: 0 auto;
-    font-size: 1.2rem;
-  }
-
-  .foto-logo{
-    margin-top: 1px;
-    height: 20px;
-    width: 22.4px;
-  }
-
-  .perfil{
-    width: 80px;
+  .contenedor-texto-cabecera{
     height: 80px;
   }
 
+  .cabecera-titulo-principal,
+  .cabecera-titulo-secundario{
+    height: 35px;
+    width: 190px;
+  }
+  .contenedor-titulo,
+  .contenedor-subtitulo{
+    height: 35px;
+  }
+
+  .iconos-contenedor-cabecera{
+    height: 30px;
+    justify-content: space-evenly !important;
+  }
+
+  .iconos-contenedor-cabecera{
+    height: 30px;
+    justify-content: space-evenly !important;
+  }
+
+  .icono-contenedor{
+    height: 30px;
+    width: 30px;
+  }
+
+  .cabecera-titulo-principal{
+    font-size: 23px;
+  }
+  .cabecera-titulo-secundario{
+    font-size: 16px;
+  }
+
+  .icono{
+    font-size: 16px;
+  }
+
+  .logo-cabecera-contenedor,
+  .perfil-cabecera-contenedor{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .perfil,
+  .logo-cabecera{
+    width: 80px;
+    height: 80px;
+  }
+  .perfil{
+    transform: scale(1);
+  }
+
+  
   .contenedor-principal-cabecera,
   .contenedor-principal-descripcion,
   .contenedor-principal-aplicaciones,
   .contenedor-principal-formulario{
-    max-width: 95%;
+    width: 95%;
   }
 }
-
