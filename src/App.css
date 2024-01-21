@@ -158,11 +158,6 @@
   margin-top: 10px;
 }
 
-/* .icono-contenedor{
-  height: 25px;
-  font-size: 25px;
-} */
-
 @media screen and (min-width: 1002px) and (max-width: 1084px) {
   .cabecera-titulo-principal{
     font-size: 32px;
@@ -239,6 +234,10 @@
     height: 115px;
     width: 115px;
   }
+
+  .contenedor-principal-formulario{
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 650px) and (max-width: 778px) {
@@ -282,6 +281,10 @@
 
   .perfil{
     transform: scale(1.1);
+  }
+
+  .contenedor-principal-formulario{
+    width: 90%;
   }
 }
 

@@ -28,8 +28,8 @@ function Descripcion(){
   };
 
   return(
-    <div className='container container-md row justify-content-center espaciado espaciado-lateral contenedor-principal-descripcion'>
-      <div className='col container-sm align-items-center espaciado espaciado-lateral sombreado contenedor-descripcion'>
+    <div className='row justify-content-center espaciado espaciado-lateral contenedor-principal-descripcion'>
+      <div className='col align-items-center espaciado espaciado-lateral sombreado contenedor-descripcion'>
         <p className='lh-sm text-center text-wrap font-monospace fts-italic espaciado espaciado-lateral'>
           {Parrafo1}<br/>
         </p>
@@ -48,13 +48,3 @@ function Descripcion(){
 }
 
 export default Descripcion;
-
-/*
-      <div className='col col-sm-auto container-sm align-items-center text-start text-wrap fst-italic espaciado espaciado-lateral sombreado contenedor-descripcion'>
-        <p className='lh-sm text-start font-monospace fts-italic espaciado-lateral' style={{marginTop: 10+ "px"}}>{Parrafo1}</p>
-        <p className='lh-sm text-start font-monospace fts-italic espaciado-lateral'>{Parrafo2}</p>
-        <p className='lh-sm text-start font-monospace fts-italic espaciado-lateral'>{Parrafo3}</p>
-        <p className='lh-sm text-end font-monospace fts-italic espaciado-lateral'>{Parrafo4}</p>
-        <p className='lh-sm text-end font-monospace fts-italic espaciado-lateral' style={{marginBottom: 10 + "px"}}>{Saludo}</p>
-      </div>
-*/
