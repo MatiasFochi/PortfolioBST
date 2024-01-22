@@ -38,7 +38,7 @@
 }
 
 .perfil:hover{
-  transform: scale(1.8);
+  transform: scale(1.55);
   transition: transform 0.2s ease-in-out;
 }
 
